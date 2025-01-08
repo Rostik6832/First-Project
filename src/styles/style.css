@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(33, 37, 43);
+}
+
+.container {
+    max-width: 1240px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    padding: 10px 0;
+    border-bottom: 5px solid white;
+}
+
+.header__logo img {
+    width: 200px;
+}
+
+.header__menu ul {
+    display: flex;
+    gap: 27px;
+    list-style: none;
+}
+
+.header__menu a {
+    color: white;
+}
