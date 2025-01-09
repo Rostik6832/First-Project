@@ -1,3 +1,30 @@
+@font-face {
+    font-family: 'Heebo-Bold';
+    src: url(../fonts/Heebo/Heebo-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Heebo-Light';
+    src: url(../fonts/Heebo/Heebo-Light.ttf);
+}
+
+@font-face {
+    font-family: 'LibreBaskerville-Bold';
+    src: url(../fonts/LibreBaskerville/LibreBaskerville-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'LibreBaskerville-Regular';
+    src: url(../fonts/LibreBaskerville/LibreBaskerville-Regular.ttf);
+}
+
+:root {
+    --primary-color: #27374D;
+    --second-color: #526D82;
+    --tertiary-color: #9DB2BF;
+    --alternate-color: #DDE6ED;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -5,7 +32,7 @@
 }
 
 body {
-    background-color: rgb(33, 37, 43);
+    background-color: var(--primary-color);
 }
 
 .container {
@@ -26,7 +53,7 @@ header .container {
 
 header {
     padding: 10px 0;
-    border-bottom: 5px solid white;
+    border-bottom: 5px solid var(--tertiary-color);
 }
 
 .header__logo img {
@@ -40,5 +67,71 @@ header {
 }
 
 .header__menu a {
-    color: white;
+    color: var(--alternate-color);
 }
+
+
+/* Main */
+
+.greetings {
+    padding-top: 100px;
+    border-bottom: 5px solid var(--tertiary-color);
+    color: var(--second-color);
+}
+
+.greetings .container {
+    display: flex;
+    gap: 50px;
+}
+
+.greetings .greetings__photo img {
+    width: 350px;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+    
+}
+
+.greetings .greetings__photo {
+    height: 400px;
+}
+
+.greetings .greetings__div {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 700px;
+}
+
+.greetings .greetings__div .greetings__greeat {
+    font-size: 40px;
+}
+
+.greetings .greetings__button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 30px;
+    color: var(--second-color);
+    background-color: var(--alternate-color);
+    transition: .5s;
+}
+
+.greetings .greetings__button:hover {
+    color: var(--alternate-color);
+    background-color: var(--second-color);
+}
+
+.greetings .greetings__button {
+    border-radius: 10px;
+}
+
+.greetings .greetings__div .greetings__greeat {
+    font-family: 'LibreBaskerville-Bold';
+    color: var(--alternate-color);
+}
+
+.greetings .greetings__div .greetings__title {
+    color: var(--tertiary-color);
+    font-size: 20px;
+    font-family: 'LibreBaskerville-Regular', sans-serif;
+}
+
